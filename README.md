@@ -2,9 +2,9 @@
 
 Python is a `high-level`, versatile programming language known for its simplicity and readability, making it a favorite among beginners and professionals alike. Created by `Guido van Rossum` and first released in `1991`, Python supports multiple programming paradigms, including `procedural`, `object-oriented`, and `functional` programming. Its extensive standard library and active community provide tools for diverse applications, from web development and data analysis to artificial intelligence and scientific computing. Python’s concise syntax enables developers to write code efficiently, enhancing productivity while maintaining clarity. As a result, it has become a cornerstone in modern software development, data science, and machine learning.
 
-### <span style="color: #ebce14;">A Python Programing full Crash cours in Kadoos EDU</span>
+# <span style="color: #ebce14;">A Python Programing full Crash cours in Kadoos EDU</span>
 
-### <span style="color: #03ce14;">Getting started</span>
+# <span style="color: #03ce14;">Getting started</span>
 
 - <span style="color: Red;">About Python</span>
 
@@ -65,10 +65,10 @@ Python is a `high-level`, versatile programming language known for its simplicit
 - <span style="color: Red;">Python Enhancement Proposal</span>
 
   - PEPs In google
-  - PEP8
+  - Talk about PEP8
   - Talk about Python code formats
   - Format Document In command pallet
-  - autopep8 Installation
+  - `autopep8` Installation
   - Talk about some developer mistake in formatting code
   - Turn auto format on save in `Code>Preferences>sittings`
   - Search for FormatOnSave and turn it on
@@ -77,3 +77,10 @@ Python is a `high-level`, versatile programming language known for its simplicit
 
   - Install Code Runner
   - Running Code by Key or `ctrl+alt+n`
+
+- <span style="color: Red;">Python Implementation</span>
+
+  - ![](Images/4.5.png)
+  - Cpython and python interpreter
+  - Other Implementations of python Jython, IronPython, PyPy
+  - These implementations help us to use other languages code in our python code
