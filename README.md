@@ -84,3 +84,65 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - Cpython and python interpreter
   - Other Implementations of python Jython, IronPython, PyPy
   - These implementations help us to use other languages code in our python code
+
+- <span style="color: Red;">Execution of Python code</span>
+
+  - `Cpython` and python interpreter
+  -
+  - C Translation to machine code
+  - ![](Images/5.png)
+  - Codes are different in Mac and Windows based on compilers
+  -
+  - ![](Images/6.png)
+  -
+  - `Java` Solve the problem
+  -
+  - ![](Images/7.png)
+  -
+  - Python use it
+  - ![](Images/8.png)
+  -
+  - `Jython Workflow
+  -
+  - ![](Images/9.png)
+
+<hr>
+
+### <span style="color: #03ce14;">Primitive Types</span>
+
+- <span style="color: Red;">Variables</span>
+
+  - Core concept of storing data by programming languages
+  - Three different built-in primitive types in python
+  - Numbers (100, 4.9,...), Booleans (True/False), Strings ("Your Name")
+  - All your variables' name should be descriptive and meaningful
+  - Python is a case sensitive programming language
+  - All letters in your variable's name should be in lower case
+  - We cannot use a number at the beginning of the name of a variable
+  - Set a space before and after your equal sign
+  - Use Underline between separate word
+
+- <span style="color: Red;">Strings</span>
+
+  - Surround your text with `"` or `'`
+  - For multiline text (long text) we use `"""`
+  - Talk about built-in function for String type
+  - `len()`
+  - Calling Functions concept by using `()`
+  - Indexing concept in Python for strings and `[]`
+  - End of the string using `[-1]`
+  - Slicing strings Using `[:]` (check all options)
+  - Using backslash `\` to scape special characters (e.g. `\"`, `\'`, `\\`, `\n`)
+  - Concatenate strings using `+`
+  - Formatted Strings using `f` and `{}`
+
+- <span style="color: Red;">String Methods</span>
+
+  - Talk about methods and OOP (Dot Notation)
+  - `upper()`, `lower()`, and `title()` methods
+  - Notice that the original string is not changed after using those methods
+  - Use `strip()` method for users input strings (`lstrip()` and `rstrip()`)
+  - Use `find()` method to find a special character or series of characters (return an index or `-1`)
+  - Use `replace("1", "2")` to change one or sequence of characters
+  - `in` and `not in` expressions for checking the existence of something
+  - Different between the `find()` and `in` expression is in return value (`index`, `True/False`)
