@@ -130,7 +130,7 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - `len()`
   - Calling Functions concept by using `()`
   - Indexing concept in Python for strings and `[]`
-  - End of the string using `[-1]`
+  - End of the string usi ng `[-1]`
   - Slicing strings Using `[:]` (check all options)
   - Using backslash `\` to scape special characters (e.g. `\"`, `\'`, `\\`, `\n`)
   - Concatenate strings using `+`
@@ -146,3 +146,53 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - Use `replace("1", "2")` to change one or sequence of characters
   - `in` and `not in` expressions for checking the existence of something
   - Different between the `find()` and `in` expression is in return value (`index`, `True/False`)
+
+- <span style="color: Red;">Numbers</span>
+
+  - There is three different number type in python
+  - `Integer`, `float`, and `complex` (a + bi)
+  - Talk about comments `#`
+
+- <span style="color: Red;">Standard Arithmetic Operations</span>
+
+  - `+`, `-`, `*`, `/`, `//`, `%` and `**`
+  - Augmented Operations `+=`, `-=`, `*=`, `/=`
+
+- <span style="color: Red;">Built-in Functions for Numbers</span>
+
+  - `round()`
+  - `abs()`
+  - Talk about modules (`math`) and import the library and check `.` notation
+  - Check `math` modules in Google (`Python 3 math modules`)
+
+- <span style="color: Red;">Type Conversion</span>
+  - Use `input()` function to get data from user
+  - Check the error and explain the reason
+  - Built-in Conversion methods in python
+  - `int()`, `float`, `bool`, and `str`
+  - talk about `type()` method
+  - All falsy values in python: `""`, `0`, `False`, `[]`, `{}`, `()`, and `None`
+  - Check in interpreter
+
+<hr>
+
+### <span style="color: #03ce14;">Control Flow </span>
+
+- <span style="color: Red;">Comparison Operators</span>
+
+  - `>`, `<`, `<=` `>=`, `==`, `!=`
+  - Talk about the differences f `=` and `==`
+  - An integer and a string value save differentially in memory `10 == "10"` is wrong
+  - every character has unique numeric representation (`unicode`), so `"bag" == "BAG"` is wrong
+  - Use `ord()` function to show differences
+
+- <span style="color: Red;">Conditional statement</span>
+
+  - `if` statement (always terminate it with `:`)
+  - Explain about code block and indentation on a simple example `temperature`
+  - Simple example (`if statement : pass`)
+  - Talk about indentation and code block with example of three print under an if statement
+  - Explain codes out of if block
+  - With `elif` statement we can add more condition to our code
+  - If all our conditions are not True we use `else` statement to execute last condition (lots of `elif` and one `else`)
+  - nested if statements
