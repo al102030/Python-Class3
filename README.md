@@ -196,3 +196,60 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - With `elif` statement we can add more condition to our code
   - If all our conditions are not True we use `else` statement to execute last condition (lots of `elif` and one `else`)
   - nested if statements
+
+- <span style="color: Red;">Ternary Operator</span>
+
+  - Turn 5 line code to one
+  - `X = elem1 if rule1 else elem2`
+  - message = "OK" if time >= 10 else "Not OK"
+
+- <span style="color: Red;">Logical Operator</span>
+
+  - `and`, `or`, and `not`
+  - `and` operator return True if both conditions are True
+  - `or` operator return True if one of conditions is True
+  - `not` changes the value of a boolean variable
+  - Don't use `==` for check a boolean variable
+  - Separate conditions logical comparison to make accurate comparison
+  - Avoid short circuit in the process of working with logical operators
+  - Chain logical operators instead of using theme in word format
+  - Use `18 <= age < 40` instead of `age >= 18 and age < 40`
+
+- <span style="color: Red;">For Loops</span>
+
+  - When we need to repeat a task for number of times `For loop' can do it (Ex: print something for 10 times)
+  - Show the result of range function using print at first
+  - Talk about counter(`number`) and `range` function (step) and add `... * "."`
+
+- <span style="color: Red;">For...else</span>
+
+  - `else` execute when a loop completely was executed and aBreak didn't happen
+
+- <span style="color: Red;">Nested Loops</span>
+
+  - Talk about Outer and inner Loops
+  - Explain how exactly python interpreter execute nested loops
+
+- <span style="color: Red;">Iterables</span>
+
+  - Use type for range() function to explain
+  - Range is complex type
+  - Iterable of strings or lists
+  - You can create a `iterable` object and use it in `For` loop
+
+- <span style="color: Red;">While Loop</span>
+
+  - We use `While` loop to repeat something as log as a condition is true
+  - Explain While loop in python interpreter as real world example
+  - Simulate Terminal using a while loop as extra example
+  - Check case sensitive characteristic of python
+  - Check a poor way of condition for while loop (A `and` B)
+
+- <span style="color: Red;">Infinite Loop</span>
+
+  - Infinite loop is a loop that runs forever
+  - You should always have a way to break the infinite loop
+  - it can cause crash for your system
+
+- <span style="color: Red;">Exercise/span>
+  - A python code that shows even number between 1 to 10 and count them
