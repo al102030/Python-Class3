@@ -236,3 +236,38 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - Range is complex type
   - Iterable of strings or lists
   - You can create a `iterable` object and use it in `For` loop
+
+- <span style="color: Red;">While Loop</span>
+
+  - We use `While` loop to repeat something as log as a condition is true
+  - Explain While loop in python interpreter as real world example
+  - Simulate Terminal using a while loop as extra example
+  - Check case sensitive characteristic of python
+  - Check a poor way of condition for while loop (A `and` B)
+
+- <span style="color: Red;">Infinite Loop</span>
+
+  - Infinite loop is a loop that runs forever
+  - You should always have a way to `break` the infinite loop
+  - it can cause crash for your system
+
+- <span style="color: Red;">Exercise</span>
+  - A python code that shows even number between 1 to 10 and count them
+
+<hr>
+
+### <span style="color: #03ce14;">Functions</span>
+
+- <span style="color: Red;">How to Define a Function</span>
+
+  - In programming we should break our code in small, reusable, and more maintainable chunks of code
+  - Use `def` keyword (short form of define) to declare your function
+  - Make sure your function names are meaningful and descriptive
+  - Name conventions should apply for functions naming
+  - After definition of a function for using it you should call it (Two line break - pep8)
+
+- <span style="color: Red;">Arguments</span>
+
+  - Talk about differences between `print` and our function
+  - Define parameters in our function
+  - A `parameter` is the input that you define for your function but an `argument` is actual value for a given parameter
