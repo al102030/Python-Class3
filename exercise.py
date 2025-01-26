@@ -65,23 +65,4 @@ for _ in range(10):
     a, b = b, a + b
 # ======================================================================================
 
-# Question 9
-# Q: Write a while loop that reverses the digits of a number num. A:
-num = 12345
-reversed_num = 0
-while num > 0:
-    digit = num % 10
-    reversed_num = reversed_num * 10 + digit
-    num //= 10
-print(reversed_num)
-# ======================================================================================
 
-# Question 10
-# Q: Write a for loop and an if statement to find all prime numbers between 1 and 20. A:
-for num in range(1, 21):
-    if num > 1:
-        for i in range(2, num):
-            if num % i == 0:
-                break
-        else:
-            print(num)
