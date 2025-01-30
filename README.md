@@ -271,3 +271,27 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - Talk about differences between `print` and our function
   - Define parameters in our function
   - A `parameter` is the input that you define for your function but an `argument` is actual value for a given parameter
+
+- <span style="color: Red;">Types of Functions</span>
+
+  - There is two type of Functions
+  - A: A function that perform a task (`say_hello()`, `print()`)
+  - B: A function that calculate and return a value (`round()`)
+  - We use `return` statement to return a value from a function
+  - Write `say_hello()` function with `return` and get it in variable
+  - Talk about print a function that doesn't return any value
+  - By default all functions return a `None` value (indicator of absence a value) till you place a return statement inside it
+
+- <span style="color: Red;">Keyword Arguments</span>
+
+  - Talk about temporary argument that python create for us when we pass a function to another function
+  - Make your code more readable when you are calling your function by using keyword arguments
+  - By adding a default value to a parameter we can make it optional
+  - (`Important`) All optional parameters should come after the required parameters
+
+- <span style="color: Red;">xargs</span>
+
+  - To pass a list of parameters to function we can use `xargs`
+  - It returns a `Tuple`
+  - By adding an asterisk (`*`) at beginning of a parameter it can take a list of values
+  - Talk about tuples and lists by return xargs argument
