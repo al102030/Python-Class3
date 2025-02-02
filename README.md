@@ -295,3 +295,66 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - It returns a `Tuple`
   - By adding an asterisk (`*`) at beginning of a parameter it can take a list of values
   - Talk about tuples and lists by return xargs argument
+
+- <span style="color: Red;">xxargs</span>
+
+  - To pass a series of keyword arguments to a function we can use `xxargs` parameter
+  - By adding double asterisk (`**`) at beginning of a parameter it can take a list of key value peers
+  - It returns a `Dictionary`
+  - By using `bracket` notation we can get the values of a dictionary
+
+- <span style="color: Red;">Scope</span>
+
+  - It's Impossible to call a variable which defined inside a function, outside of it
+  - A local variable only works inside the scope also parameters
+  - Thc completely equal variable in two different function is completely separate
+  - When a function called, python interpreter allocate a memory to it's variables and release it at end function's execution (`Garbage Collector`)
+  - On the other side we have global variables which can be used anywhere in code
+  - Global use memory for long time and you should not use them often
+  - A global variable's value never change even inside a function
+  - By using `global` keyword we can reference a local variable to a global one
+  - Using global variables is not recommended because it can has a side effect in other functions
+
+- <span style="color: Red;">Debugging</span>
+
+  - Start debugging process inside `Debug panel` (F5)
+  - Choose current file and `VSCode` create a `json` file for your project (`don't touch it`)
+  - By using `bullet points` (F9) you can define break point for debug process
+  - By pushing F10 key you can step forward in process
+  - By pushing F11 key you can step into a sub-process like a function
+  - To stop debugger with `shift+F5`
+  - Debugger stops wherever you placed a bullet point
+  - To step out of a function or loop you can press `shift+F11`
+
+- <span style="color: Red;">VSCode Tricks</span>
+  - In each line you can move to the end by pushing `end` key
+  - In each line you can move to the beginning by pushing `home` key
+  - By pressing `Ctrl+end` cursor move to the end of the file
+  - By pressing `Ctrl+home` cursor move to the beginning of the file
+  - By pressing `alt` plus `arrow keys` (top-down) you can move a line of code top or down
+  - To duplicate a line press `alt+shift+down` keys
+  - By pressing `Ctrl+/` you can change a line to comment
+  - By typing some characters of a variable you can place it by pushing enter
+
+<hr>
+
+### <span style="color: #03ce14;">Data Structure</span>
+
+- <span style="color: Red;">Lists</span>
+
+  - We use `[]` in Python to define a list or sequence of objects
+  - Talk about different type of list (list of numbers, list of lists like a matrix)
+  - `zeros = [0] * 100` / Use `+` to concatenate or `*` to multiply
+  - In python lists items doesn't need to be a same type
+  - Use `list()` method to convert objects to list like `list(range(20))` or `list("Hello")`
+  - `list()` function takes an `iterable` as argument
+  - Use `len()` method to get length of a list
+
+- <span style="color: Red;">Accessing Items</span>
+
+  - By using Bracket notation we can have access to a list items
+  - Talk about similar thing with regard strings
+  - To modifying items use assign element. Change list Items like `my_list[1] = "B"`
+  - Use [:] to get a range of items in list
+  - By slicing a list, original list doesn't change
+  - Use [::-1] to reverse a list ex: `my_list(range(20))[::-1]`
