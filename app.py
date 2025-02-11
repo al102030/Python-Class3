@@ -1,9 +1,9 @@
-items = [
-    ("pro1", 10),
-    ("pro2", 9),
-    ("pro3", 12),
-]
+x = 1
+y = 2
 
-items.sort(key=lambda item: item[1])
+z = x
+x = y
+y = z
 
-print(items)
+print(x)
+print(y)

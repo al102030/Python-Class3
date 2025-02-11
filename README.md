@@ -431,3 +431,44 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - To merge two or more list in a single list of tuples we can use `zip` function
   - It returns a `Zip object` which is a iterable
   - Add a string to zip function and see the result
+
+- <span style="color: Red;">Stacks</span>
+
+  - A `LIFO` data structure (`example of Books`)
+  - Website's pages visiting hierarchy is good simple fore Stack
+  - We can use `.append()`, `.pop()` methods for simulating stack and `stc[-1]` and `not []' to check it
+  - `[]` is another falsy value
+
+- <span style="color: Red;">Queues</span>
+
+  - A `FIFO` data structure
+  - We use `deque` for optimize Using queue
+  - Use `.popleft()` and `deque` class to manage your queue in optimize way
+
+- <span style="color: Red;">Tuples</span>
+
+  - Tuple is a read only list and we use `()` to define it
+  - if we remove () Python Assume it as tuple like `1, or 1,2`
+  - Empty parentheses indicate a tuple
+  - We can multiple a number into a tuple or concatenate tuples
+  - We can convert a list or any iterable into a tuple using `tuple()` function
+  - `Indexing`, `packing`, and `unpacking` rules are usable related to tuples
+  - We cannot mutate tuples and assign a value of tuple to a new value
+  - We use a tuple when we need a sequence of objects that should be untouched throughout the execution of program
+
+- <span style="color: Red;">Swapping Variables</span>
+
+  - `x, y = Y, x` (Exercise)
+  - This clause works as unpacking in tuples `x, y = (11, 10)`
+  - Explain about tuples without `()`
+
+- <span style="color: Red;">Arrays</span>
+
+  - When we deal with a large sequence of numbers we should use Array
+  - Array take less memory and work a little bit faster
+  - In 99% of the cases we use lists but sometimes when we experience a <span style="color: yellow;">performance problem</span>, arrays can solve it
+  - For the using array we should import it
+  - Search for `python 3 Typecode` in Google
+  - `Array(typecode, iterable)`
+  - We can all methods of lists about arrays
+  - All members in array should be the same type (test assigning float to integer array)
