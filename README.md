@@ -472,3 +472,78 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - `Array(typecode, iterable)`
   - We can all methods of lists about arrays
   - All members in array should be the same type (test assigning float to integer array)
+
+- <span style="color: Red;">Sets</span>
+
+  - Set is a unordered collection of data without duplicates
+  - By converting a List to set by using `set()` function we can remove all duplicates
+  - We use `{}` to define sets
+  - Like lists we can add to (`.add()` method) and remove items (`.remove()` method) from a set
+  - `len()` function return the size of a set
+  - Shining usage of sets is in `mathematics`
+  - Use `|` operator to make union of two sets
+  - Use `&` operator to get the intersection of two sets
+  - Use `-` operator to get the differences between two sets
+  - Use `^` operator to get the symmetric differences between two sets
+  - Sets items not in sequence and we cannot access them by index
+  - We can existence of a value by using `if .. in` statement
+
+- <span style="color: Red;">Dictionaries</span>
+
+  - Dictionary is a `key value pe` collection of data
+  - In dictionary <span style="color: #5599ff;">keys</span> can only be an `integer` or a `string` and <span style="color: #5599ff;">value</span> can be kind of `anything`
+  - Index in dictionaries is the key items (`my_dict["key1"]`)
+  - We can define a dictionary by using `dict()` function
+  - Always check for existence of a key before use or call it by `if ... in` statement or `.get()` method
+  - To delete an item use `del` statement
+  - For loop on a dictionary return keys in each iteration
+  - By using `.items()` we can get dictionary's item in the shape of tuple in each iteration
+  - Practice on writing list comprehension (Change it to a set)
+  - We can use Comprehension for sets and dictionaries
+  - `Val = {x : x*2 for x in range(5)}`
+
+- <span style="color: Red;">Generator Expression</span>
+
+  - Comprehension on tuples return a `Generator Objects`
+  - Generator object like list is a iterable but generate value in each iteration
+  - Generators don't store all values in memory
+  - `len()` function doesn't work on generator object
+
+- <span style="color: Red;">Unpacking Operator</span>
+
+  - We can print items of a list by using `[*numbers]` statement
+  - We can use unpacking operators to combine lists
+  - Also unpack operator work abut dictionaries by using `**`
+  - If we have multiple item in our dictionaries, the last item will be used
+
+<hr>
+
+### <span style="color: #03ce14;">Exceptions</span>
+
+- <span style="color: Red;">Exceptions</span>
+
+  - An exception is a kind of error that terminate the execution of the program
+  - Usually these errors happens because of programmers mistakes or bad data that we get from the user or resources not being available
+  - Like `index error` in lists or getting `None` value is input from user
+  - By using a `try exception` block we can handel potential errors
+  - If you don't handel exceptions properly your program will crash
+  - All codes after try block will be executed after accruing an exception
+  - By adding an `else` statement to your try block, if no exception is thrown else block code wil be executed
+  - It's possible that different kind of exceptions happens and it's important to handel them
+  - We can define `multiple exception` block for our try clause or put all potential exceptions in one exception block (`inside a parentheses`)
+  - If one of our try block exceptions be executed other exceptions will be ignored
+  - We should release the external resources like files or network connections after finishing our job with them
+  - To prevent duplicate or release external resources, we need to define a `finally` at the end of your try block
+  - Also we can use `with` statement in the case of working with external resources
+  - This resources will be released when the program doesn't need the anymore
+  - If any object in python supports <span style="color: Red;">context management protocol</span>, we should open them by `with` statement
+  - These files has two `__enter__` and `__exit__` magic method
+  - We can open multiple file with one `with` statement
+  - We can `raise` an exception by using this statement
+  - Check Python 3 built-in exceptions In Google
+  - We can manage all raises exceptions by try block
+  - Using `Try-exception` is costly and only use it for sample and small programs
+  - `Pass` statement is necessary when we need to do nothing
+  - Think about using `try` block if you can handel it with a sample `if` statement
+
+<hr>
