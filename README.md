@@ -515,3 +515,65 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - We can use unpacking operators to combine lists
   - Also unpack operator work abut dictionaries by using `**`
   - If we have multiple item in our dictionaries, the last item will be used
+  <hr>
+
+### <span style="color: #03ce14;">Exceptions</span>
+
+- <span style="color: Red;">Exceptions</span>
+
+  - An exception is a kind of error that terminate the execution of the program
+  - Like `index error` in lists or getting `None` value is input from user
+  - By using a `try exception` block we can handel potential errors
+  - If you don't handel exceptions properly your program will crash
+  - All codes after try block will be executed after accruing an exception
+  - By adding an `else` statement to your try block, if no exception is thrown else block code wil be executed
+  - It's possible that different kind of exceptions happens and it's important to handel them
+  - We can define `multiple exception` block for our try clause or put all potential exceptions in one exception block (`inside a parentheses`)
+  - If one of our try block exceptions be executed other exceptions will be ignored
+  - We should release the external resources like files or network connections after finishing our job with them
+  - To prevent duplicate or release external resources, we need to define a `finally` at the end of your try block
+  - Also we can use `with` statement in the case of working with external resources
+  - This resources will be released when the program doesn't need the anymore
+  - If any object in python supports <span style="color: Red;">context management protocol</span>, we should open them by `with` statement
+  - These files has two `__enter__` and `__exit__` magic method
+  - We can open multiple file with one `with` statement
+  - We can `raise` an exception by using this statement
+  - Check Python 3 built-in exceptions In Google
+  - We can manage all raises exceptions by try block
+  - Using `Try-exception` is costly and only use it for sample and small programs
+  - `Pass` statement is necessary when we need to do nothing
+  - Think about using `try` block if you can handel it with a sample `if` statement
+
+<hr>
+
+### <span style="color: #03ce14;">Classes</span>
+
+- <span style="color: Red;">Classes</span>
+
+  - A class is a blueprint or template that defines the structure and behavior of an object
+  - An `instance` of a class represents a specific, unique occurrence of that class, with its own set of `data` and the ability to perform `actions` defined by the class
+  - Wrap up: A `Class` is a blueprint for creating new objects
+  - Wrap up: An `Object` is an instance of a class
+  - Classes form the building `blocks` for organizing and manipulating data in a comprehensive and organized manner, enabling `efficient` and `reusable` software development
+  - Examples of classes and instances in real world
+
+- <span style="color: Red;">Creating Classes</span>
+
+  - We follow Pascal naming conventions in classes naming
+  - By using `class` keyword we can define our custom classes
+  - We can define a object by calling a class and assign it to a variable
+  - Talk about inheritance related to classes and Python objects
+  - Talk again about `type()` method
+  - By using `isinstance()` method we can check that an object is instance of a certain class
+  - We cannot use a class without making an instance of it
+
+- <span style="color: Red;">Constructors</span>
+
+  - `__init__` method is especial `magic method` that executed when a new object was creating
+  - `self` is reference to the current new object
+  - Python create our new object and put it in memory and reference that in self statement
+  - An object has its own attributes that have data which related to it
+  - For example human is class that have its `attributes` like eye color, skin color, hight, wight, and etc, and its functions like walking, jumping, eating, and etc
+  - Python fill self variable automatically for us, when an object is created
+  - We can use self to call this object attributes or functions
+  - To use functions of an object it's not necessary to put object name in function arguments. Python does it automatically
