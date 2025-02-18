@@ -577,3 +577,46 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - Python fill self variable automatically for us, when an object is created
   - We can use self to call this object attributes or functions
   - To use functions of an object it's not necessary to put object name in function arguments. Python does it automatically
+
+- <span style="color: Red;">Class vs Instance Attributes</span>
+
+  - We can define a new attribute for an object after creating it
+  - `Objects in python are dynamic`
+  - `Instance attributes` belong to each object separately
+  - `Class level attributes` are shared across all instances of a class
+  - We can use a class level attribute without making an instance
+
+- <span style="color: Red;">Class vs Instance Methods</span>
+
+  - When we create an instance of a class, we can use its functions as instance methods
+  - These methods really need to work a specific object
+  - `Zero()` method is factory method
+  - To create a class level method we need to use `cls` statement instead of `self`
+  - Also we need a `decorator` to extend our method behavior
+
+- <span style="color: Red;">Magic Methods</span>
+
+  - Magic methods called by python interpreter automatically depend on who we use our objects or classes
+  - Search Python 3 magic methods in google
+  - Print point object and talk about the type
+  - Use `str` magic method as example to convert variables to string
+
+- <span style="color: Red;">Comparing Objects</span>
+
+  - Two object of a Class with same attributes are completely different because they have different references in memory
+  - We should use `__eq__` magic methods to represent a comparable form of our class and check equality
+  - Implement `__gt__` method and check it for `<` and `>` operators
+  - If you implement a magic method python automatically figure out what to do if you use the other one
+
+- <span style="color: Red;">Performing Arithmetic Operations</span>
+
+  - Use `__add__` magic method to sum to object
+  - Save the result to another variable and print an attribute of it
+
+- <span style="color: Red;">Creating Custom Containers</span>
+
+  - We can define our custom Container using python built-in data structures like dictionary
+  - Define `add` method for our TagCloud class
+  - Use get method to get item
+  - Convert tags to lowercase through getting item
+  - Define basic options for your Custom TagCloud like `len()`, `set`, and `get` items
