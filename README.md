@@ -620,3 +620,65 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - Use get method to get item
   - Convert tags to lowercase through getting item
   - Define basic options for your Custom TagCloud like `len()`, `set`, and `get` items
+
+- <span style="color: Red;">Private Members</span>
+
+  - To make an attribute unaccessible from outside a class prefix it with two underline
+  - Check this by . notation on an instance of your object
+  - This member is still accessible but is hard to access and it's a kind of warring
+  - Check `__dict__` method (It's dictionary that all the attribute of a class)
+  - Python automatically prefix an attribute with the class name
+
+- <span style="color: Red;">Properties</span>
+
+  - To have control over attributes we can define set-get method to control values (It's not Pythonic)
+  - Also we Can use a more Pythonic way that called properties
+  - Define a class attribute using `property()` method
+  - A property is an object that set in front of an attribute to get or set the value of that attribute
+  - Only path a reference to get and set method
+  - You have access to your property and easily can set or get it
+  - set and get method pollute your object interface
+  - You can make them unaccessible by adding two underline but its not good
+  - Also you can `@property` decorator to make your code more professional
+  - Change the set and get method name to ideal name
+  - Add `@name.setter` proChange your constructor and your attribute to regular one
+
+- <span style="color: Red;">Inheritance</span>
+
+  - Classes with same method can make your code busy and noisy hard to maintain
+  - Avoid `DRY`. it means: `D`on't `R`epeat `Y`ourself
+  - We can use `inheritance` or `composition` to solve this problem
+  - Inheritance is a mechanism that allows us to define common behavior or common functions in one class and then inherit them in other classes
+  - We use `parentheses` in front of a class name and write the `parent class` inside it to inherit all attributes and methods from `Base class` to `Sub class`
+  - Sub class inherit all methods and attributes from base class
+
+- <span style="color: Red;">The Object Class</span>
+
+  - Use `isinstance()` Method to reveal relationship between classes and object class
+  - `Object` class is base class for all classes in python
+  - Check inheritance between a class and object class by `isinstance()` and inspecting an instance of both of them
+  - `issubclass()` method return True if a class is subclass of another class
+
+- <span style="color: Red;">Method Overriding</span>
+
+  - When we use a subclass, some methods like constructor are overriding the Base class constructor
+  - By using `super()` method we can call base class constructor in a sub class
+  - To change the sequence of call super() method we can change the position of method
+  - To recap method overriding means replacing or extending a method defined in base class
+
+- <span style="color: Red;">Multi-level Inheritance</span>
+
+  - Inheritance prevent code duplication and allows us to reuse code
+  - Too much Inheritance between classes can increase complexity and introduce lots of issues (Too much of a good thing is bad thing)
+  - Remember, We should use multi-level inheritance in `one` or `two` level, not more
+
+- <span style="color: Red;">Multiple Inheritance</span>
+
+  - If You use multiple Inheritance not properly it's gonna be source of issues
+  - In multiple Inheritance python interpreter, first look for specific method in sub class and after that try to find it in multiple parents class in order from left to right
+  - Multiple inheritance is not a bad thing, just like multi-level inheritance, if you don't use it properly it can cause problems
+  - Before using multiple inheritance, check that the parent classes should have the minimum subscription
+
+- <span style="color: Red;">A Good Example of Inheritance</span>
+
+  - A good Example of Inheritance on streaming from file and network in our web application
