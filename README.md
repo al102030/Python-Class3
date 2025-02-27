@@ -772,3 +772,24 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - The name of the module that starts our program is always `main`
   - After add `if name == "main":` to a module when run in directly the the block code of it will be executed. but when imported it into another file this part of code will be ignored
   - by this way we make this file useable as script as well as reuseable module that we can import into another module
+
+### <span style="color: #03ce14;">Python Standard Library</span>
+
+- <span style="color: Red;">What we are going to learn</span>
+
+  - Working with the `path`, `Files`, `SQLite`, `Date/Time`, `Random values` and So on...
+
+- <span style="color: Red;">Working With Path</span>
+
+  - After import `path` library we ca use it in different ways
+  - We can use `raw strings` to scape lots of double `\\`
+  - search python 3 `pathlib` in google
+  - The most important methods of this library is `exist()`, `is_file()`, `is_dir()`, `with_name()` and ...
+
+- <span style="color: Red;">Working With Directories</span>
+
+  - Important methods in `Pathlib` library for work with directories
+  - We use `iterdir()` method to get list of files and directories in a particular directory
+  - It returns a generator object because a directory can contain a millions of files within
+  - We use `glob()` method to find files based on a specific pattern
+  - We use `rglob()` method to find files based on a specific pattern recursively
