@@ -800,6 +800,22 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - Use `time` module to convert `timestamp` to a human readable format
   - By using `read_text(_)` or `read_bytes()` and also `write_text(_)` or `write_bytes()` methods we can change content our file
   - We can use `shutil` library to copy files instead of using `read_text(_)` or `write_text()` methods
+  - `tell()` Method: Returns the current position of the file pointer (cursor) in bytes
+  - `seek(offset, whence)` Method: Moves the file pointer to a specified position:
+    - `offset` → Number of bytes to move
+    - `whence` (optional) → Reference position:
+      - 0: (default): Beginning of the file
+      - 1: Current position
+      - 2: End of the file
+  - In Python, the `open()` function supports multiple `modes (flags)` for working with files. Here’s a breakdown of all the important modes:
+    - `r`: Read-only mode (default). The file must exist
+    - `rb`: Read-only in binary mode (used for images, videos, etc.)
+    - `w`: Write mode (creates a new file or overwrites an existing file)
+    - `wb`: Write binary mode (used for binary files like images, PDFs)
+    - `a`: Append mode (adds content to the end of the file)
+    - `ab`: Append binary mode (adds binary data at the end)
+  - `readline()`: Reads a single line from a file.t is useful when you want to read a file line by line instead of loading the entire file into memory
+  - `writelines()`: Writes multiple lines (provided as a list) to a file at once. It is useful when you have multiple lines to write at once
 
 - <span style="color: Red;">Working With ZIP and CSV Files</span>
 
@@ -817,3 +833,54 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - We use `JSON` to format data in human readable way
   - To answer the requests that ask some data from your website you need to provide data in JSON format
   - Note that `dump()` and `load()` convert between files and objects, while `dumps()` and `loads()` convert between strings and objects
+
+- <span style="color: Red;">Working With XML Files</span>
+
+  - `XML` means eXtensible Markup Language (not programming language)
+  - It was designed for storing, organize, and transport data
+  - It has no predefined tags
+  - XML separates information for presentation
+  - XML tags doesn't look like anything in the browser
+  - `prolog` is the first line of xml and it's optional
+  - `<?xml version=1.0 encoding="UTF-8"?`
+  - Your xml file has root element tag all elements have to start with opening tag `<tag_name>` and closing tag `</tag_name>` (it's a case sensitive language)
+  - Nesting is important and avoid mismatch
+  - There are three different modules that allows us to work with xml file `ElementTree`, `xml.sax`, and `xml.dom`
+  - In `sax` we never load whole file in to the ram and we only load the pieces that we need and we can't change content (very large xml file)
+  - In `dom` we load whole file into the ram and we can read write and change file in a hierarchical structure
+  - We need a `handler` (work with file) and `parser` (translate file)
+
+- <span style="color: Red;">Working With SQLite Database</span>
+
+  - `SQLite` is very light weight Database that we use to store data of an application
+  - We can use `SQLite Database browser` to manage our sqlite db file in visual (download `db browser for sqlite` from google)
+  - Insert data into database using a SQL `INSERT` query text
+  - Read data from database using a SQL `SELECT` query text
+  - When we try to read from database we'll get cursor
+
+- <span style="color: Red;">Working With Timestamps</span>
+
+  - To work with time and date in python we can use two modules (`time`, `datetime`)
+  - Time module returns `timestamp` and datetime module returns an object that contains many attributes like `year`, `month`, and ...
+  - Start of timestamp in unix base systems is a actual date (`1970-1-1`) and timestamp demonstrates all seconds from that time
+
+- <span style="color: Red;">Working With DatetTimes</span>
+
+  - `DateTime` object can converts a date to python object
+  - `DateTime` can show currents date time by method `now()`
+  - `DataTime` object can converts `strings` to real datetime by `strptime()` method (by using a pattern like ("%Y/%m/%d"))
+  - Search Python 3 `Strptime` in <span style="color: Orange;">Google</span>
+  - `DataTime` object can converts timestamp object to string by `fromtimestamp()` method
+  - `DataTime` object can converts datetime object to string by `strftime()` method
+  - We can compare datetime objects
+
+- <span style="color: Red;">Working With Time Deltas</span>
+
+  - We can add or subtract a duration from our datetime object
+  - `timedelta` has it's attributes and methods
+
+- <span style="color: Red;">Generating Random Values</span>
+
+  - We can make random values by using `random` module
+  - We use `string` module to give choices method all ascii letters and numbers to generate a good password
+  - By using `join()` method we can join all items in a list together
