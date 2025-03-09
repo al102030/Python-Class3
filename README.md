@@ -884,3 +884,62 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - We can make random values by using `random` module
   - We use `string` module to give choices method all ascii letters and numbers to generate a good password
   - By using `join()` method we can join all items in a list together
+
+- <span style="color: Red;">WebBrowser Module</span>
+
+  - We can open a web browser by using `webbrowser` Module
+
+- <span style="color: Red;">Send Email</span>
+
+  - We can send email by using email `module`
+  - First we should add all info that an email need to be sended by `sntp` protocol
+
+- <span style="color: Red;">Line Arguments</span>
+
+  - By using `argv` module we can have access to command prompt extra codes like `user` or `password` attributes which have been written by user
+
+### <span style="color: #03ce14;">Python Package Index</span>
+
+- <span style="color: Red;">Pypi</span>
+
+  - There are times that we need features that not implemented in the Python standard libraries
+  - We use `Pypi`(Python Packaging Index) to import lots of useful libraries to our program
+  - Visit <span style="color: #5599ff;">pypi.org</span> and search on it to find your desireable package
+  - Search in google: `"Best python packages for working with ..."`
+
+- <span style="color: Red;">Pip</span>
+
+  - We use tool named `pip` to manage our packages
+  - Use `"pip install 'package-name'"` to install a package
+  - We can use `'pip list'` to check our installed packages
+  - Check a package like `requests` in <span style="color: #5599ff;">pypi.org</span>
+  - By adding `==` and the a specific version number we can install an earlier or older version of a package(`requests==2.9.*`) (`~`)
+  - use `pip uninstall 'package-name'` to uninstall a package
+  - Import an installed packages in python file as example
+
+- <span style="color: Red;">Virtual Environments</span>
+
+  - When we need to work with two different version of a package in two separated projects simultaneously we should create a `virtual environment` for each of them
+  - By `python -m venv env` we can make a virtual environment for our project
+  - Our packages would be installed inside the `site-packages` directory
+  - In windows, to active the virtual environment we should use this command: `env\bin\activate.bat`
+  - We use `deactivate` command to deactivate `venv`
+
+- <span style="color: Red;">Pipenv</span>
+
+  - `Pipenv` is tool that combine pip with virtual environment to a single tool
+  - Install pipenv using pip first
+  - To install packages using pipenv we use `pipenv` command instead of `pip` in `pip install` command
+  - We can locate our new virtual environment by command: `pipenv --venv`
+  - We activate our virtual environment by this command : `pipenv shell` and deactivate it by `exit`
+  - In vscode we need some configuration to use pipenv
+  - After implementing pipnv you need to change the path of python to your project virtual environment directory
+  - `pipfile` and `pipfile.lock` help to keep track of our project dependencies
+  - In another computer by using `pipenv install` we can install all our projects' dependencies (It looks for pipfile)
+  - To install all packages in their actual version that used in the time of developing of the package
+  - `pipenv graph` shows you all installed dependencies
+  - By using `pipenv uninstall` you can remove a dependency
+  - To find the out dated packages we can use `pipenv update --outdated`
+  - By using `pipenv update` we can update our dependencies
+  - `pydoc3 math` show the documentation of math library
+  - `pydoc -w PACKAGE_NAME` can convert a package to `HTML` file
