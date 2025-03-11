@@ -943,3 +943,52 @@ Python is a `high-level`, versatile programming language known for its simplicit
   - By using `pipenv update` we can update our dependencies
   - `pydoc3 math` show the documentation of math library
   - `pydoc -w PACKAGE_NAME` can convert a package to `HTML` file
+
+### <span style="color: #03ce14;">Tkinter</span>
+
+- <span style="color: Red;">GUI Application</span>
+
+  - Create virtual environment and run it
+  - Install `tkinter` library (`pipenv install tk`)
+  - Install `pyinstaller` library
+  - Create your `part_manager.py` file
+  - Create your `db.py` file
+  - Import `tkinter` library (`import tkinter as tk`)
+  - `mainloop()` method Keep your app run permanently
+  - Change your app title
+  - You need to add a widget to your root application
+  - By calling `StringVar()`, `Label()`, and `Entry()` methods we can create a data entry section
+  - We can add `grid` geometry to add a button to our application
+  - `grid` is most compatible geometry manager that is most flexible with all kind of applications
+  - By using `geometry()` method we can apply size to our app
+  - Add some widget to your app (`Label`, `textbox` and ...)
+  - Create a `listbox` using `Listbox()` method for your app to show items
+  - `rowspan` and `columnspan` give more space to your grid cells vertically and horizontally
+  - Now we need a `scrollbar`. Create it with `Scrollbar()` method and place it in the third column
+  - By using `configure()` method we can stick our scrollbar to listbox
+  - `command` option set scroll behavior
+  - Now we need to add our buttons to app by using `Button()` method
+  - For `command` option we need to path a <span style="color: Red;">function</span> that do something when user push the button
+  - Define your command functions at top of the file
+  - Now we need to define our database in `db.py` file
+  - It's more better, organized and optimized to use class
+  - In our class `constructor` we need to define db and connection to it
+  - Also we should define `table` at first if it doesn't exist
+  - Now we need to define `CRUD` operations in the form of the `class methods`
+  - After define `cursor` in each method you need execute your <span style="color: lightgreen;">SQL</span> command and finally <span style="color: Red;">commit</span> it
+  - Give your values to cursor in the form of <span style="color: Red;">tuple</span>
+  - In the case of deleting an object it's important that you have a `deconstructing` method in your class
+  - Now create an object with your class and insert some date into it (Use my_file repo)
+  - Import your `Database` class inside part_manager module and instantiate it
+  - Now we can all our methods inside the db module and place them in the functions that we define for buttons
+  - `populate_list` echo all records inside the database
+  - First delete all items in listbox and import database information into it
+  - Define `add_item` method and use it as command for `Add Part` button
+  - Your app add item even all textbox are empty and you should avoid it by using `messagebox` and check input
+  - To remove an item we need to find its `id` by another method called `select_item` whcih we define to get selected item in the list
+  - Our select item should get an `event` that is binded to our <span style="color: lightgreen;">Listbox SELECT</span>
+  - Also we need to fill textboxes with actual info in data base after selection
+  - To remove an item just by passing first element of selected item to `remove()` method we can do it
+  - For `Update` you should give the selected item id and all textboxes info to update method
+  - Now you can create an executable file of your application by using `pyinstaller` module ad this command:
+  - `"pyinstaller --onefile --windowed app.py"`
